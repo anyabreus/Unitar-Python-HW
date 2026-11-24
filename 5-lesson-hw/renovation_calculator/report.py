@@ -11,7 +11,12 @@ def format_report(
     warnings,
 ):
     lines = [
-        f"Кількість проаналізованих позицій: {items_len} ({len(warnings)} виключено через помилки (див. нижче))"
+        f"Кількість проаналізованих позицій: {items_len}"
+        + (
+            f" ({len(warnings)} виключено через помилки (див. нижче))"
+            if warnings
+            else ""
+        )
     ]
 
     lines.append(f"\nЗагальна вартість ремонту: {renovation_cost}.\n\tВ тому числі:")
