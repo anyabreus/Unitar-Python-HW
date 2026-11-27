@@ -1,0 +1,14 @@
+======================================== test session starts ========================================
+platform win32 -- Python 3.13.16, pytest-9.2.0, pluggy-1.7.0
+cachedir: .pytest_cache
+plugins: anyio-4.16.0, platformdirs-4.13.5
+collected 6 items
+
+tests/test_services.py::test_calculate_renovation_cost PASSED                                  [ 16%]
+tests/test_services.py::test_calculate_category_cost PASSED                                    [ 33%]
+tests/test_services.py::test_calculate_category_cost_rejects_unknown_category PASSED           [ 50%]
+tests/test_services.py::test_calculate_square_m_cost PASSED                                    [ 66%]
+tests/test_services.py::test_calculate_square_m_cost_rejects_zero_apartment_size PASSED        [ 83%]
+tests/test_services.py::test_find_most_expensive_items_returns_three_items PASSED              [100%]
+
+========================================= 6 passed in 2.03s =========================================
